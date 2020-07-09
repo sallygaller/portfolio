@@ -1,0 +1,329 @@
+/* import custom font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
+
+/* section formatting */
+body {
+  background-color: #D9CECC;
+}
+
+header {
+  background: #D9CECC;
+  color: black;
+}
+
+header img {
+  margin: 0px;
+  padding-top: 0px;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0px;
+  padding-top: 20px;
+  line-height: 72px;
+  font-size: 72px;
+  font-family:'DM Serif Display', cursive;
+}
+
+header nav {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+main h2, main h3, footer p, main p, form {
+  margin: 15px;
+}
+
+main p {
+  margin: 10px 10px 10px 15px;
+}
+
+main p {
+  font-size: 16px;
+}
+
+/* flex-box */
+.group {
+  display: flex;
+  flex-direction: column
+}
+
+.group-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 0px 10px 10px 0px;
+}
+
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 10px 10px 10px 0px;
+}
+
+.portfolio-item img {
+  border-radius: 50px;
+  max-height: 225px;
+  align-self: center;
+}
+
+.item-double {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding-bottom: 15px;
+}
+
+.item .about-img {
+  border-radius: 50px;
+  max-height: 225px;
+  align-self: center;
+}
+
+/* font styles */
+main * {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer * {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* padding */
+.padding-5 {
+  padding: 5px;
+}
+
+.padding-10 {
+  padding: 10px;
+}
+
+.p-top-5 {
+  padding-top: 5px;
+}
+
+.p-top-15 {
+  padding-top: 15px;
+}
+
+.p-bottom-15 {
+  padding-bottom: 15px;
+}
+
+/*font size and text formatting*/
+.f-size-20 {
+  font-size: 20px;
+}
+
+.f-size-22 {
+  font-size: 22px;
+}
+
+p, ul {
+  line-height: 25px;
+}
+
+.margin-0 {
+  margin: 0px;
+}
+
+/* width and height */
+.width-100 {
+  width: 100%;
+}
+
+.m-width-75 {
+  max-width: 75%;
+}
+
+.m-width-500 {
+  max-width: 500px;
+}
+
+.m-height-200 {
+  max-height: 200px;
+}
+
+/*colors*/
+.grey-border {
+  border-style: solid;
+  border-color: #76898C;
+  border-width: 10px;
+}
+
+.bg-color-silver {
+  background-color: #D7D9D7;
+}
+
+.bg-color-dark {
+  background-color: #76898C;
+}
+
+.fc-white {
+  color: white;
+}
+
+/* form */
+form label {
+  padding-top: 5px;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 0px; 
+    font-size: 16px;
+    background: #76898C;
+    color: white;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+form input {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+form textarea {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/*style links*/ 
+a.main:link { 
+  color: #593E39;
+  text-decoration: none;
+  font-weight: bold;
+} 
+
+a.main:visited { 
+  color: #593E39;
+  font-weight: bold;
+} 
+
+/* when device is 800px+ */ 
+@media all and (min-width: 800px) {
+/* flex-box */
+  .group-reverse {
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  }
+
+  .group {
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .title-nav {
+    display: flex;
+    justify-content: space-between;  
+  }
+
+  .portfolio-item {
+    max-width: 600px;
+    margin-right: 100px;
+    background-color: #D9CECC;
+    border-radius: 50px;
+  }
+
+  .portfolio-item img {
+    border-radius: 50px;
+    align-self: center;
+    max-height: 500px;
+  }
+
+  .item img {
+    border-radius: 50px;
+    margin-left: 50px;
+    align-self: flex-start;
+    max-height: 500px;
+  }
+
+  .item .portfolio-img {
+    border-radius: 50px;
+    margin-left: 25px;
+    align-self: flex-start;
+    max-height: 800px;
+  }
+
+  .item .about-img {
+  border-radius: 50px;
+  max-height: 300px;
+}
+
+
+/* section formatting */
+  body {
+    margin: 25px;
+  }
+
+  header h1 {
+    margin-left: 50px;
+    padding-bottom: 30px;
+    font-size: 86px;
+  }
+
+  header nav {
+    margin-top: 30px;
+    margin-right: 50px;
+    font-weight: bold;
+  }
+
+  main h2, main h3, footer p, main p, form, main ul {
+  margin-left: 50px
+  }
+
+/* link formatting */
+  a.main:hover { 
+  color: #76898C;
+  text-decoration: 768C76; 
+  } 
+
+  header nav ul li a:hover {
+  color: #768C76;
+  }
+
+/* form */
+form input, form textarea {
+  margin-bottom: 20px;
+  margin-right: 50px
+}
+
+form button:hover {
+  background: #768C76;
+}
+}
