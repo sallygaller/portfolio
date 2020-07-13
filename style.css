@@ -1,7 +1,7 @@
 /* import custom font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
 
-/* section formatting */
+/* ---section formatting--- */
 body {
   background-color: #D9CECC;
 }
@@ -9,6 +9,14 @@ body {
 header {
   background: #D9CECC;
   color: black;
+}
+
+/* horitzonal rule dividing sections */
+hr {
+  background-color: #76898C;
+  border-width: 0px;
+  height: 2px;
+  margin: 0px;
 }
 
 header img {
@@ -25,6 +33,7 @@ header h1 {
   font-family:'DM Serif Display', cursive;
 }
 
+/* ---nav bar--- */
 header nav {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -32,36 +41,41 @@ header nav {
   text-transform: uppercase;
 }
 
+/* nav bar bullets */
 header nav ul {
   display: flex;
   padding-left: 0;
   list-style: none;
 }
 
+/* nav bar bullet styling */
 header nav ul li a {
   color: black;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 550;
   text-decoration: none;
   margin: 0 20px 0 0;
 }
 
+/* ---margins on sections--- */
 header nav ul li:last-child a {
   margin-right: 0;
 }
 
-main h2, main h3, footer p, main p, form {
-  margin: 15px;
+/* standard margin */
+main h2, main p, footer p, form {
+  margin-left: 20px;
 }
 
-main p {
-  margin: 10px 10px 10px 15px;
+main p, footer p, form {
+  margin-right: 5px;
 }
 
-main p {
-  font-size: 16px;
+.portfolio-bullets {
+  list-style-position: outside;
 }
 
-/* flex-box */
+/* ---flex-box--- */
 .group {
   display: flex;
   flex-direction: column
@@ -77,14 +91,18 @@ main p {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 0px 10px 10px 0px;
 }
 
 .portfolio-item {
-  display: flex;
   flex-direction: column;
   flex: 1;
-  margin: 10px 10px 10px 0px;
+  margin: 10px;
+  padding: 15px;
+  max-width: 600px;
+  align-self: center;
+  display: flex;
+  background-color: #D9CECC;
+  border-radius: 50px;
 }
 
 .portfolio-item img {
@@ -106,7 +124,7 @@ main p {
   align-self: center;
 }
 
-/* font styles */
+/* ---font styles--- */
 main * {
   font-family: 'Roboto', sans-serif;
 }
@@ -115,7 +133,11 @@ footer * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* padding */
+/* ---padding and margins--- */
+.m-bottom-0 {
+  margin-bottom: 0px;
+}
+
 .padding-5 {
   padding: 5px;
 }
@@ -132,11 +154,23 @@ footer * {
   padding-top: 15px;
 }
 
+.p-top-25 {
+  padding-top: 25px;
+}
+
 .p-bottom-15 {
   padding-bottom: 15px;
 }
 
-/*font size and text formatting*/
+.p-bottom-25 {
+  padding-bottom: 25px;
+}
+
+/* ---font size and text formatting--- */
+main p {
+  font-size: 16px;
+}
+
 .f-size-20 {
   font-size: 20px;
 }
@@ -145,15 +179,19 @@ footer * {
   font-size: 22px;
 }
 
+.f-size-24 {
+  font-size: 24px;
+}
+
 p, ul {
   line-height: 25px;
 }
 
-.margin-0 {
-  margin: 0px;
+.align-center {
+  text-align: center;
 }
 
-/* width and height */
+/* ---width and height--- */
 .width-100 {
   width: 100%;
 }
@@ -166,11 +204,7 @@ p, ul {
   max-width: 500px;
 }
 
-.m-height-200 {
-  max-height: 200px;
-}
-
-/*colors*/
+/* ---colors--- */
 .grey-border {
   border-style: solid;
   border-color: #76898C;
@@ -189,7 +223,7 @@ p, ul {
   color: white;
 }
 
-/* form */
+/* ---form--- */
 form label {
   padding-top: 5px;
   display: block;
@@ -199,14 +233,14 @@ form label {
 }
 
 form button {
-    padding: 10px 16px;
-    border-radius: 10px;
-    border: 0px; 
-    font-size: 16px;
-    background: #76898C;
-    color: white;
-    margin-left: 0px;
-    margin-bottom: 0px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 0px; 
+  font-size: 16px;
+  background: #76898C;
+  color: white;
+  margin-left: 0px;
+  margin-bottom: 10px;
 }
 
 form input {
@@ -220,7 +254,7 @@ form textarea {
   margin-bottom: 5px;
 }
 
-/*style links*/ 
+/* ---style links--- */ 
 a.main:link { 
   color: #593E39;
   text-decoration: none;
@@ -232,32 +266,23 @@ a.main:visited {
   font-weight: bold;
 } 
 
-/* when device is 800px+ */ 
+/* -----when device is 800px+----- */ 
 @media all and (min-width: 800px) {
-/* flex-box */
+  /* ---flex-box--- */
   .group-reverse {
-  flex-direction: row;
-  align-items: stretch;
-  flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .group {
-    align-items: stretch;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
   .title-nav {
     display: flex;
     justify-content: space-between;  
-  }
-
-  .portfolio-item {
-    max-width: 600px;
-    margin-right: 100px;
-    background-color: #D9CECC;
-    border-radius: 50px;
   }
 
   .portfolio-item img {
@@ -273,24 +298,12 @@ a.main:visited {
     max-height: 500px;
   }
 
-  .item .portfolio-img {
-    border-radius: 50px;
-    margin-left: 25px;
-    align-self: flex-start;
-    max-height: 800px;
-  }
-
   .item .about-img {
   border-radius: 50px;
   max-height: 300px;
-}
-
-
-/* section formatting */
-  body {
-    margin: 25px;
   }
 
+  /* ---section formatting--- */
   header h1 {
     margin-left: 50px;
     padding-bottom: 30px;
@@ -300,14 +313,32 @@ a.main:visited {
   header nav {
     margin-top: 30px;
     margin-right: 50px;
-    font-weight: bold;
   }
 
-  main h2, main h3, footer p, main p, form, main ul {
+  footer p, main p, form {
   margin-left: 50px
   }
 
-/* link formatting */
+  .m-left-50 {
+    margin-left: 50px;
+  }
+
+  main p, footer p, form {
+  margin-right: 0px;
+  } 
+
+  .portfolio-bullets {
+  list-style-position: outside;
+  margin-left: 5%;
+  }
+
+  /* ---nav bar formatting--- */
+  header nav ul li a {
+  font-size: 20px;
+  margin: 0 25px 0 0;
+  }
+
+  /* ---style links--- */
   a.main:hover { 
   color: #76898C;
   text-decoration: 768C76; 
@@ -317,13 +348,13 @@ a.main:visited {
   color: #768C76;
   }
 
-/* form */
-form input, form textarea {
+  /* ---form--- */
+  form input, form textarea {
   margin-bottom: 20px;
   margin-right: 50px
-}
+  }
 
-form button:hover {
+  form button:hover {
   background: #768C76;
-}
+  }
 }
