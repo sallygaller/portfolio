@@ -67,8 +67,12 @@ main h2, main p, footer p, form {
   margin-left: 20px;
 }
 
-main p, footer p, form {
+main p, footer p {
   margin-right: 5px;
+}
+
+form {
+  margin-right: 10px;
 }
 
 .portfolio-bullets {
