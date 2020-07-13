@@ -78,7 +78,7 @@ main p, footer p {
 /* ---flex-box--- */
 .group {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .group-reverse {
@@ -316,7 +316,7 @@ a.main:visited {
   }
 
   footer p, main p, form {
-  margin-left: 50px
+  margin-left: 50px;
   }
 
   .m-left-50 {
@@ -351,7 +351,8 @@ a.main:visited {
   /* ---form--- */
   form input, form textarea {
   margin-bottom: 20px;
-  margin-right: 50px
+  margin-right: 50px;
+  width: 100%;
   }
 
   form button:hover {
