@@ -71,10 +71,6 @@ main p, footer p {
   margin-right: 5px;
 }
 
-form {
-  margin-right: 10px;
-}
-
 .portfolio-bullets {
   list-style-position: outside;
 }
@@ -249,12 +245,12 @@ form button {
 
 form input {
   margin-bottom: 20px;
-  width: 100%;
+  width: 95%;
 }
 
 form textarea {
   height: 150px;
-  width: 100%;
+  width: 95%;
   margin-bottom: 5px;
 }
 
