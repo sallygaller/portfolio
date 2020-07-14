@@ -138,10 +138,6 @@ footer * {
   margin-bottom: 0px;
 }
 
-.m-bottom-4 {
-  margin-bottom: 4px;
-}
-
 .padding-5 {
   padding: 5px;
 }
@@ -325,6 +321,10 @@ a.main:visited {
 
   .m-left-50 {
     margin-left: 50px;
+  }
+
+  .m-bottom-4 {
+  margin-bottom: 4px; 
   }
 
   main p, footer p, form {
