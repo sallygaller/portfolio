@@ -266,6 +266,12 @@ a.main:visited {
   font-weight: bold;
 } 
 
+.placeholder-link {
+  cursor: pointer;
+  color: #593E39;
+  font-weight: bold;
+}
+
 /* -----when device is 800px+----- */ 
 @media all and (min-width: 800px) {
   /* ---flex-box--- */
