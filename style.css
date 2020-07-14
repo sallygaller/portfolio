@@ -354,6 +354,11 @@ a.main:visited {
   text-decoration: 768C76; 
   } 
 
+  .placeholder-link:hover {
+  color: #76898C;
+  text-decoration: 768C76; 
+  }
+
   header nav ul li a:hover {
   color: #768C76;
   }
