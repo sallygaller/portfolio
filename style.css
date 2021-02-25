@@ -67,6 +67,10 @@ main h2, main p, footer p, form {
   margin-left: 20px;
 }
 
+form {
+  margin-right: 20px;
+}
+
 main p, footer p {
   margin-right: 12px;
 }
@@ -244,7 +248,7 @@ form button {
 }
 
 form input {
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
   width: 95%;
 }
 
