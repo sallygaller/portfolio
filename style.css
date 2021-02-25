@@ -49,7 +49,7 @@ header nav ul {
 }
 
 /* nav bar bullet styling */
-header nav ul li a {
+header nav ul li a  {
   color: black;
   font-size: 16px;
   font-weight: 550;
@@ -256,21 +256,21 @@ form textarea {
 
 /* ---style links--- */ 
 a.main:link { 
-  color: #593E39;
+  color: black;
   text-decoration: none;
   font-weight: bold;
 } 
 
 a.main:visited { 
-  color: #593E39;
+  color: black;
   font-weight: bold;
 } 
 
 .placeholder-link {
   cursor: pointer;
-  color: #593E39;
+  color: black;
   font-weight: bold;
-}
+} 
 
 /* -----when device is 850px+----- */ 
 @media all and (min-width: 850px) {
