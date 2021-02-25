@@ -196,8 +196,8 @@ p, ul {
   width: 100%;
 }
 
-.m-width-75 {
-  max-width: 80%;
+.m-width-img {
+  max-width: 95%;
 }
 
 .m-width-500 {
@@ -272,8 +272,8 @@ a.main:visited {
   font-weight: bold;
 }
 
-/* -----when device is 800px+----- */ 
-@media all and (min-width: 800px) {
+/* -----when device is 850px+----- */ 
+@media all and (min-width: 850px) {
   /* ---flex-box--- */
   .group-reverse {
     flex-direction: row;
@@ -299,8 +299,8 @@ a.main:visited {
 
   .portfolio-item {
     border-radius: 50px;
-    height: 780px;
-    width: 500px;
+    height: 850px;
+    width: 650px;
   }
 
   .item img {
@@ -337,6 +337,10 @@ a.main:visited {
 
   .m-bottom-4 {
   margin-bottom: 4px; 
+  }
+
+  .m-width-img {
+    max-width: 80%;
   }
 
   main p, footer p, form {
