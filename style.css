@@ -51,7 +51,7 @@ header nav ul {
 /* nav bar bullet styling */
 header nav ul li a  {
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 550;
   text-decoration: none;
   margin: 0 20px 0 0;
@@ -63,7 +63,7 @@ header nav ul li:last-child a {
 }
 
 /* standard margin */
-main h2, main p, footer p, form {
+main p, footer p, form {
   margin-left: 20px;
 }
 
@@ -128,6 +128,10 @@ main p, footer p {
   align-self: center;
 }
 
+.light-background {
+  background-color: #E6DAD8;
+}
+
 /* ---font styles--- */
 main * {
   font-family: 'Roboto', sans-serif;
@@ -168,7 +172,11 @@ footer * {
 
 /* ---font size and text formatting--- */
 main p {
-  font-size: 16px;
+  font-size: 18px;
+}
+
+main li {
+  font-size: 18px;
 }
 
 .f-size-20 {
@@ -200,6 +208,10 @@ p, ul {
   max-width: 95%;
 }
 
+.m-left-h2 {
+  margin-left: 20px;
+}
+
 .m-width-500 {
   max-width: 500px;
 }
@@ -227,7 +239,7 @@ p, ul {
 form label {
   padding-top: 5px;
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -236,7 +248,7 @@ form button {
   padding: 10px 16px;
   border-radius: 10px;
   border: 0px; 
-  font-size: 16px;
+  font-size: 18px;
   background: #76898C;
   color: white;
   margin-left: 0px;
@@ -272,6 +284,30 @@ a.main:visited {
   font-weight: bold;
 } 
 
+.link-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.button {
+  border: solid 5px#76898C;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  padding: 8px 10px;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0px 5px 0px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
 /* -----when device is 850px+----- */ 
 @media all and (min-width: 850px) {
   /* ---flex-box--- */
@@ -303,11 +339,32 @@ a.main:visited {
     width: 650px;
   }
 
+  .portfolio-main {
+    height: 950px;
+    max-width: 1250px;
+  }
+
+  .portfolio-main ul {
+    max-width: 80%;
+    align-self: center;
+  }
+
+  .link-group {
+    flex-direction: row;
+  }
+
   .item img {
     border-radius: 50px;
     margin-left: 50px;
     align-self: flex-start;
     max-height: 500px;
+  }
+
+  .button {
+    width: 20%;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 5px;
   }
 
   .item .about-img {
@@ -335,7 +392,11 @@ a.main:visited {
     margin-bottom: 0px;
   }
 
-  .m-left-50 {
+  .m-left-20 {
+    margin-left: 20px;
+  }
+
+  .m-left-h2 {
     margin-left: 50px;
   }
 

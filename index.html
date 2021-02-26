@@ -27,19 +27,19 @@
 
 	<main>
 		<section class="p-bottom-15" id="home">
-			<h2 class="p-top-15 f-size-22 m-left-50">Hello!</h2>
+			<h2 class="p-top-15 f-size-22 m-left-h2">Hello!</h2>
 			<p>I'm a software developer currently living in Portland, OR. I have a background in music, sound design, and database administration, all of which have paved the way for my dream career as a developer.</p>
       <p>I'm a full-stack developer who particularly loves working with backend technologies. 
         I really enjoy being able to draw on my database admin experience and apply it in a different space! I'm also passionate about developing technology for wildlife and environmental conservation.</p>
 		</section>
 
 		<section class="p-bottom-25" id="about-me">
-			<h2 class="f-size-22 m-left-50 m-bottom-0">About Me</h2>
+			<h2 class="f-size-22 m-left-h2 m-bottom-0">About Me</h2>
       <div class="group-reverse">
         <div class="item-double">
           <p>I was first exposed to software development during my undergraduate degree studying music composition. I always adopted a mathematical approach to writing compositions, and when I learned how to use visual programming languages (e.g. Max/MSP) to write algorithmic compositions, I was hooked! It prompted me to pursue my MSc. in Sound Design, where I was able to continue composing computer music and working with new technologies.</p>
           <p>The overarching theme of my academic and professional career is problem-solving. I've realized that I find joy in problem-solving, whether it's searching for the perfect chord progression or fixing a bug. I feel really lucky that web development allows me to collaborate with others, be creative, and be a full-time problem-solver.</p>  
-          <p>I'm originally from Somerset, a county in south-west England known for cheddar cheese and excellent accents. In my free time, I enjoy <a class="main" href="https://www.goodreads.com/user/show/77742961-sally-galler" target="_blank">reading</a>, playing video games, <a class="main" href="https://soundcloud.com/sallysounds" target="_blank">recording birdsong</a>, and trying desperately not to kill the plants in my garden.</p>
+          <p>I'm originally from Somerset, a county in southwest England known for cheddar cheese and excellent accents. In my free time, I enjoy <a class="main" href="https://www.goodreads.com/user/show/77742961-sally-galler" target="_blank">reading</a>, playing video games, <a class="main" href="https://soundcloud.com/sallysounds" target="_blank">recording birdsong</a>, and trying desperately not to kill the plants in my garden.</p>
         </div>
         <div class="item">
           <img class="about-img m-width-500 padding-10" src="images/sally-and-eddie.jpg" alt="Sally and Eddie">
@@ -50,57 +50,64 @@
 		<section class="p-top-15 p-bottom-25 bg-color-silver" id="portfolio">
 			<h2 class="f-size-24 align-center ">Portfolio</h2>
       <div class="group">
-        <div class="portfolio-item">
-          <a class="main" rel="noopener" href="https://sallygaller.github.io/quiz-app/" target="_blank"><h3 class="f-size-20 padding-5 align-center">Codswallop</h3></a>
-          <img class="grey-border m-width-img" src="images/codswallop-screenshot.jpg" alt="Screenshot of Quiz App feedback page">
-          <ul class="p-top-5 portfolio-bullets">
-            <li>Codswallop is an interactive quiz app testing the user's knowledge of British daytime television.</li>
-            <li>The app checks the user's answers, provides feedback, and keeps a running score.</li>
-            <li>Built using HTML, CSS, JavaScript, and jQuery.</li>
-            <li><a class="main" rel="noopener" href="https://github.com/sallygaller/quiz-app" target="_blank">View the GitHub repo.</a></li>
-            <li><a class="main" rel="noopener" href="https://sallygaller.github.io/quiz-app/" target="_blank">View the app.</a></li>
-          </ul>
-        </div>
-        <div class="portfolio-item">
-          <a class="main" rel="noopener" href="https://sallygaller.github.io/bird-OR/" target="_blank"><h3 class="f-size-20 padding-5 align-center">bird-OR</h3></a>
-          <img class="grey-border m-width-img" src="images/bird-or-screenshot.jpg" alt="Screenshot of bird-OR search page">
-          <ul class="p-top-5 portfolio-bullets">
-            <li>bird-OR is an application for birdwatchers located in Oregon. The user can search any county in Oregon and see birds that have been spotted there over the last 30 days.</li>
-            <li>bird-OR is designed for novice birdwatchers who want to know what to look and listen for when they go birdwatching.</li>
-            <li>Built using HTML, CSS, JavaScript, and jQuery. The app pulls data from the following APIs: e-bird, Flickr, and freesound.</li>
-            <li><a class="main" rel="noopener" href="https://github.com/sallygaller/bird-OR" target="_blank">View the GitHub repo.</a></li>
-            <li><a class="main" rel="noopener" href="https://sallygaller.github.io/bird-OR/" target="_blank">View the app.</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="group">
-        <div class="portfolio-item">
-          <a class="main" rel="noopener" href="https://naturehood-app.vercel.app/" target="_blank"><h3 class="f-size-20 padding-5 align-center">natureHood</h3></a>
+        <div class="portfolio-item portfolio-main">
+          <a class="main" rel="noopener" href="https://naturehood-app.vercel.app/" target="_blank"><h3 class="f-size-22 padding-5 align-center">natureHood</h3></a>
           <img class="grey-border m-width-img" src="images/naturehood-screenshot.jpg" alt="Screenshot of natureHood">
-          <ul class="p-top-5 portfolio-bullets">
+          <div class="link-group">
+            <a rel="noopener" class="button" href="https://naturehood-app.vercel.app/" target="_blank">App</a>
+            <a class="button" rel="noopener" href="https://github.com/sallygaller/naturehood" target="_blank">Client Repo</a> 
+            <a class="button" rel="noopener" href="https://github.com/sallygaller/naturehood-api" target="_blank">Server Repo</a>
+          </div>
+          <ul class="portfolio-bullets">
             <li>natureHood is a full-stack application designed to foster community and wildlife advocacy in local neighborhoods. Users can record wildlife observations in their locale (e.g. species, time spotted, approximate location, and description) and view wildlife spotted by their neighbors.</li>
             <li>The intention of the app is to build community, provide insight into wildlife population and migratory behaviors, and encourage local conservation efforts.</li>
             <li>Built using HTML, CSS, JavaScript, React, Node, PostgreSQL, Express, Mapbox GL, and Google Maps Geocoding.</li>
-            <li>View the Github <a class="main" rel="noopener" href="https://github.com/sallygaller/naturehood" target="_blank">client repo</a> and the <a class="main" href="https://github.com/sallygaller/naturehood-api" target="_blank">server repo</a>.</li>
-            <li><a rel="noopener" class="main" href="https://naturehood-app.vercel.app/" target="_blank">View the app.</a></li>
           </ul>
         </div>
-        <div class="portfolio-item">
+        <!-- <div class="portfolio-item">
           <h3 class="f-size-20 padding-5 align-center">Fourth Project [Placeholder Content]</h3>
           <img class="grey-border m-width-img" src="images/placeholder.jpg" alt="Placeholder Image">
-          <!-- <ul class="p-top-5 portfolio-bullets">
+          <ul class="p-top-5 portfolio-bullets">
             <li>Description that explains what the app does.</li>
             <li>Who the app is for, why it was built.</li>
             <li>Skills used (what is the stack).</li>
             <li><a class="placeholder-link">Placeholder link to the GitHub repo of the project.</a></li>
             <li><a class="placeholder-link">Placeholder link to live, working app.</a></li>
-          </ul> -->
+          </ul>
+        </div> -->
+      </div>
+      <div class="group">
+        <div class="portfolio-item">
+          <a class="main" rel="noopener" href="https://sallygaller.github.io/bird-OR/" target="_blank"><h3 class="f-size-22 padding-5 align-center">bird-OR</h3></a>
+          <img class="grey-border m-width-img" src="images/bird-or-screenshot.jpg" alt="Screenshot of bird-OR search page">
+          <div class="link-group">
+            <a class="button" rel="noopener" href="https://sallygaller.github.io/bird-OR/" target="_blank">App</a> 
+            <a class="button" rel="noopener" href="https://github.com/sallygaller/bird-OR" target="_blank">Repo</a>
+          </div>
+          <ul class="p-top-5 portfolio-bullets">
+            <li>bird-OR is an application for birdwatchers located in Oregon. The user can search any county in Oregon and see birds that have been spotted there over the last 30 days.</li>
+            <li>bird-OR is designed for novice birdwatchers who want to know what to look and listen for when they go birdwatching.</li>
+            <li>Built using HTML, CSS, JavaScript, and jQuery. The app pulls data from the following APIs: e-bird, Flickr, and freesound.</li>
+          </ul>
+        </div>
+        <div class="portfolio-item">
+          <a class="main" rel="noopener" href="https://sallygaller.github.io/quiz-app/" target="_blank"><h3 class="f-size-22 padding-5 align-center">Codswallop</h3></a>
+          <img class="grey-border m-width-img" src="images/codswallop-screenshot.jpg" alt="Screenshot of Quiz App feedback page">
+          <div class="link-group">
+            <a class="button" rel="noopener" href="https://sallygaller.github.io/quiz-app/" target="_blank">App</a> 
+            <a class="button" rel="noopener" href="https://github.com/sallygaller/quiz-app" target="_blank">Repo</a>
+          </div>
+          <ul class="p-top-5 portfolio-bullets">
+            <li>Codswallop is an interactive quiz app testing the user's knowledge of British daytime television.</li>
+            <li>The app checks the user's answers, provides feedback, and keeps a running score.</li>
+            <li>Built using HTML, CSS, JavaScript, and jQuery.</li>
+          </ul>
         </div>
       </div>
 		</section>
     <hr>
-		<section class="p-top-15 p-bottom-15" id="contact">
-			<h2 class="f-size-22 m-left-50 m-bottom-4">Let's talk about it!</h2>
+		<section class="p-top-15 p-bottom-15 light-background" id="contact">
+			<h2 class="f-size-22 m-left-h2 m-bottom-4">Let's talk about it!</h2>
       <div class="group">
         <div class="item">
           <p>I'm eager to collaborate with other developers, whether it's having fun with procedural audio or working on a piece of software that could change the world!</p>
@@ -116,7 +123,7 @@
         </div>
         <div class="item">
           <p class="m-bottom-0">You can also contact me through:</p>
-          <ul class=" margin-0 m-left-50">
+          <ul class=" margin-0 m-left-h2">
            <li><a style = "font-weight:bold" rel="noopener" class="main" href="mailto:sallyannegaller@gmail.com">Email</a></li> 
             <li><a style = "font-weight:bold" rel="noopener" class="main" href="https://www.linkedin.com/in/sally-galler-portland" target="_blank">LinkedIn</a></li> 
             <li><a style = "font-weight:bold" rel="noopener" class="main" href="https://github.com/sallygaller" target="_blank">GitHub</a></li>
