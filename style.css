@@ -38,6 +38,12 @@ header h1 {
 }
 
 /* ---nav bar--- */
+.nav {
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+}
+
 header nav {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -55,7 +61,7 @@ header nav ul {
 /* nav bar bullet styling */
 header nav ul li a  {
   color: black;
-  font-size: 18px;
+  display: flex;
   font-weight: 550;
   text-decoration: none;
   margin: 0 20px 0 0;
@@ -128,7 +134,8 @@ main p, footer p {
 
 .item .about-img {
   border-radius: 50px;
-  max-height: 225px;
+  max-height: 200px;
+  min-height: 160px;
   align-self: center;
 }
 
@@ -378,6 +385,10 @@ a.main:visited {
   .item .about-img {
   border-radius: 50px;
   max-height: 300px;
+  }
+
+  .nav {
+    font-size: 20px;
   }
 
   /* ---section formatting--- */
