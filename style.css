@@ -302,7 +302,7 @@ a.main:visited {
   text-align: center;
   text-decoration: none;
   margin: 10px 0px 5px 0px;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -336,7 +336,7 @@ a.main:visited {
   .portfolio-item {
     border-radius: 50px;
     height: 850px;
-    width: 650px;
+    width: 600px;
   }
 
   .portfolio-main {
