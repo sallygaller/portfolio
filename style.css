@@ -172,11 +172,11 @@ footer * {
 
 /* ---font size and text formatting--- */
 main p {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 main li {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .f-size-20 {
@@ -239,7 +239,7 @@ p, ul {
 form label {
   padding-top: 5px;
   display: block;
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -248,7 +248,7 @@ form button {
   padding: 10px 16px;
   border-radius: 10px;
   border: 0px; 
-  font-size: 18px;
+  font-size: 17px;
   background: #76898C;
   color: white;
   margin-left: 0px;
@@ -388,6 +388,10 @@ a.main:visited {
   margin-left: 50px;
   }
 
+  main p {
+    margin-right: 20px;
+  }
+
   .m-bottom-0 {
     margin-bottom: 0px;
   }
@@ -406,6 +410,10 @@ a.main:visited {
 
   .m-width-img {
     max-width: 80%;
+  }
+
+  .m-right-25 {
+    margin-right: 25px;
   }
 
   main p, footer p, form {
