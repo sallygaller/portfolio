@@ -1,6 +1,10 @@
 /* import custom font */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ---section formatting--- */
 body {
   background-color: #D9CECC;
@@ -199,6 +203,10 @@ p, ul {
   text-align: center;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /* ---width and height--- */
 .width-100 {
   width: 100%;
@@ -335,12 +343,12 @@ a.main:visited {
 
   .portfolio-item {
     border-radius: 50px;
-    height: 850px;
+    height: 900px;
     width: 900px;
   }
 
   .portfolio-main {
-    height: 950px;
+    min-height: 950px;
     max-width: 1250px;
   }
 
