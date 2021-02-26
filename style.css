@@ -425,40 +425,45 @@ a.main:visited {
   }
 
   main p, footer p, form {
-  margin-right: 0px;
+    margin-right: 0px;
   } 
 
   .portfolio-bullets {
-  list-style-position: outside;
-  margin-left: 5%;
+    list-style-position: outside;
+    margin-left: 5%;
   }
 
   /* ---nav bar formatting--- */
   header nav ul li a {
-  font-size: 20px;
-  margin: 0 25px 0 0;
+    font-size: 20px;
+    margin: 0 25px 0 0;
   }
 
   /* ---style links--- */
   a.main:hover { 
-  color: #76898C;
-  text-decoration: 768C76; 
+    color: #76898C;
+    text-decoration: 768C76; 
   } 
 
   .placeholder-link:hover {
-  color: #76898C;
-  text-decoration: 768C76; 
+    color: #76898C;
+    text-decoration: none; 
+  }
+
+  .button:hover {
+    background-color: #76898C;
+    text-decoration: none; 
   }
 
   header nav ul li a:hover {
-  color: #768C76;
+    color: #768C76;
   }
 
   /* ---form--- */
   form input, form textarea {
-  margin-bottom: 20px;
-  margin-right: 50px;
-  width: 100%;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    width: 100%;
   }
 
   form button:hover {
